@@ -6,7 +6,7 @@ def CLI():
 
 
     # List of valid output types
-    valid_output_types = ['csv', 'excel', 'html', 'json', 'pickle', 'parquet', 'feather', 'msgpack', 'stata', 'png', 'svg', 'pdf']
+    valid_output_types = ['csv', 'excel', 'html', 'json', 'pickle', 'parquet', 'feather', 'tex']
 
     # Create the argument parser
     parser = argparse.ArgumentParser()
