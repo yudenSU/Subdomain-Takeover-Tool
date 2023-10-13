@@ -1,0 +1,9 @@
+{
+    "windows": {
+        "amass_path": ".\\amass_Windows_amd64\\amass.exe"
+    },
+    "linux": {
+        "amass_path": "/path/to/amass"
+    }
+}
+
