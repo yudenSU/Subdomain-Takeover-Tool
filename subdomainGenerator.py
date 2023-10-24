@@ -1,6 +1,8 @@
 import subprocess
 import platform
 import json
+import time
+import re
 
 class SubdomainFinder:
     def __init__(self, enumOutput):
@@ -33,11 +35,13 @@ class SubdomainFinder:
                 return "Amass path not specified for this operating system"
 
             cmd = [amass_path, "enum", "-o", self.enumOutput, "-d", target_domain]
+
             result = subprocess.run(cmd, capture_output=True, text=True, check=True)
 
             # Split the output into lines and extract subdomains
             output_lines = result.stdout.strip().split('\n')
             subdomains = [re.sub(r'\([^)]*\)|-->', ',', line.strip()) for line in output_lines]
+
             print("AMASS enumeration finished")
             return subdomains
         except Exception as e:

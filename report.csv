@@ -1,6 +1,0 @@
-FQDN,target_domain,vulnerable,takeover_type,vulnerability_notes
-owasp.org,fay.ns.cloudflare.com,False,NS,safe
-owasp.org,west.ns.cloudflare.com,False,NS,safe
-giving.owasp.org,customdomains.causevox.com,False,CNAME,safe
-dsomm.owasp.org,dsomm.timo-pagel.de,False,CNAME,safe
-customdomains.causevox.com,causevox.linj.clearalias.com,False,CNAME,safe
